@@ -1,0 +1,4 @@
+include ':app'
+//include ':opencv'
+//project(':opencv').projectDir = new File('sdk')
+rootProject.name='AIDemo'

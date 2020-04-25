@@ -1,0 +1,8 @@
+ext {
+    addRepos = this.&addRepos
+}
+
+def addRepos(RepositoryHandler handler) {
+    handler.maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    handler.maven { url 'https://maven.aliyun.com/repository/google' }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sina.aidemo.ui.AutoFitTextureView
+        android:id="@+id/sfv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <com.sina.aidemo.ui.SkeletonView
+        android:id="@+id/skeleton"
+        android:layout_width="257dp"
+        android:layout_height="257dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="无结果"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</RelativeLayout>
