@@ -1,0 +1,7 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'AIDemo' do
+	pod 'TensorFlowLiteObjC', '~> 2.1'
+end

@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3980B76048807F69DA387461 /* Pods_AIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E09C1009CCA456AC1E2264 /* Pods_AIDemo.framework */; };
+		FC45F4C4242DA994000A051B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45F4C3242DA994000A051B /* AppDelegate.m */; };
+		FC45F4CF242DA995000A051B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC45F4CE242DA995000A051B /* Assets.xcassets */; };
+		FC45F4D5242DA995000A051B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45F4D4242DA995000A051B /* main.m */; };
+		FC58CA4D242DD18700740ACA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC58CA4C242DD18700740ACA /* MainViewController.m */; };
+		FC58CA84242DDB8600740ACA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC58CA83242DDB8600740ACA /* Accelerate.framework */; };
+		FCFE6F18245A768C00D287FE /* Skeleton.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EDF245A768C00D287FE /* Skeleton.m */; };
+		FCFE6F19245A768C00D287FE /* SkeletonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EE0245A768C00D287FE /* SkeletonManager.m */; };
+		FCFE6F1A245A768C00D287FE /* CameraUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EE4245A768C00D287FE /* CameraUtils.m */; };
+		FCFE6F1B245A768C00D287FE /* VImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EE8245A768C00D287FE /* VImageUtils.m */; };
+		FCFE6F1C245A768C00D287FE /* PoseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EEA245A768C00D287FE /* PoseLayer.m */; };
+		FCFE6F1D245A768C00D287FE /* BlazeFaceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EEC245A768C00D287FE /* BlazeFaceLayer.m */; };
+		FCFE6F1E245A768C00D287FE /* HandTrackingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EEF245A768C00D287FE /* HandTrackingLayer.m */; };
+		FCFE6F1F245A768C00D287FE /* PoseEstimationControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EF1245A768C00D287FE /* PoseEstimationControllerViewController.m */; };
+		FCFE6F20245A768C00D287FE /* PoseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EF7245A768C00D287FE /* PoseController.m */; };
+		FCFE6F21245A768C00D287FE /* BlazeFaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EF8245A768C00D287FE /* BlazeFaceController.m */; };
+		FCFE6F23245A768C00D287FE /* HandTrackingController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EFA245A768C00D287FE /* HandTrackingController.m */; };
+		FCFE6F24245A768C00D287FE /* PoseNet.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EFC245A768C00D287FE /* PoseNet.m */; };
+		FCFE6F25245A768C00D287FE /* PoseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6EFE245A768C00D287FE /* PoseNetManager.m */; };
+		FCFE6F26245A768C00D287FE /* Face.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6F04245A768C00D287FE /* Face.m */; };
+		FCFE6F27245A768C00D287FE /* BlazeFace.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6F05245A768C00D287FE /* BlazeFace.m */; };
+		FCFE6F28245A768C00D287FE /* BlazeFaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6F06245A768C00D287FE /* BlazeFaceUtil.m */; };
+		FCFE6F29245A768C00D287FE /* BlazeFaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6F07245A768C00D287FE /* BlazeFaceManager.m */; };
+		FCFE6F2A245A768C00D287FE /* HandTrakcing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6F0C245A768C00D287FE /* HandTrakcing.m */; };
+		FCFE6F2B245A768C00D287FE /* HandTrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6F0D245A768C00D287FE /* HandTrackingManager.m */; };
+		FCFE6F2C245A768C00D287FE /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE6F0F245A768C00D287FE /* Hand.m */; };
+		FCFE6F2D245A768C00D287FE /* hand_landmark_3d.tflite in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6F11245A768C00D287FE /* hand_landmark_3d.tflite */; };
+		FCFE6F2E245A768C00D287FE /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6F12245A768C00D287FE /* labels.txt */; };
+		FCFE6F2F245A768C00D287FE /* hand_landmark.tflite in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6F13245A768C00D287FE /* hand_landmark.tflite */; };
+		FCFE6F30245A768C00D287FE /* skeleton.tflite in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6F14245A768C00D287FE /* skeleton.tflite */; };
+		FCFE6F31245A768C00D287FE /* face_detection_front.tflite in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6F15245A768C00D287FE /* face_detection_front.tflite */; };
+		FCFE6F32245A768C00D287FE /* posenet_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6F16245A768C00D287FE /* posenet_model.tflite */; };
+		FCFE6F33245A768C00D287FE /* AILib.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FCFE6F17245A768C00D287FE /* AILib.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04E06178A941268418194A70 /* Pods-AIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIDemo.debug.xcconfig"; path = "Target Support Files/Pods-AIDemo/Pods-AIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2C551809DE3DDEA2D637008B /* Pods-AIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIDemo.release.xcconfig"; path = "Target Support Files/Pods-AIDemo/Pods-AIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		80E09C1009CCA456AC1E2264 /* Pods_AIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC45F4BF242DA994000A051B /* AIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC45F4C2242DA994000A051B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC45F4C3242DA994000A051B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC45F4CE242DA995000A051B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC45F4D3242DA995000A051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC45F4D4242DA995000A051B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC58CA4B242DD18700740ACA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FC58CA4C242DD18700740ACA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FC58CA83242DDB8600740ACA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FCFE6EDF245A768C00D287FE /* Skeleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Skeleton.m; sourceTree = "<group>"; };
+		FCFE6EE0245A768C00D287FE /* SkeletonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkeletonManager.m; sourceTree = "<group>"; };
+		FCFE6EE1245A768C00D287FE /* SkeletonManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkeletonManager.h; sourceTree = "<group>"; };
+		FCFE6EE2245A768C00D287FE /* Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skeleton.h; sourceTree = "<group>"; };
+		FCFE6EE4245A768C00D287FE /* CameraUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraUtils.m; sourceTree = "<group>"; };
+		FCFE6EE5245A768C00D287FE /* VImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VImageUtils.h; sourceTree = "<group>"; };
+		FCFE6EE6245A768C00D287FE /* AIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIConstants.h; sourceTree = "<group>"; };
+		FCFE6EE7245A768C00D287FE /* CameraUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraUtils.h; sourceTree = "<group>"; };
+		FCFE6EE8245A768C00D287FE /* VImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VImageUtils.m; sourceTree = "<group>"; };
+		FCFE6EEA245A768C00D287FE /* PoseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseLayer.m; sourceTree = "<group>"; };
+		FCFE6EEB245A768C00D287FE /* HandTrackingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTrackingLayer.h; sourceTree = "<group>"; };
+		FCFE6EEC245A768C00D287FE /* BlazeFaceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeFaceLayer.m; sourceTree = "<group>"; };
+		FCFE6EED245A768C00D287FE /* PoseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseLayer.h; sourceTree = "<group>"; };
+		FCFE6EEE245A768C00D287FE /* BlazeFaceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeFaceLayer.h; sourceTree = "<group>"; };
+		FCFE6EEF245A768C00D287FE /* HandTrackingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandTrackingLayer.m; sourceTree = "<group>"; };
+		FCFE6EF1245A768C00D287FE /* PoseEstimationControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseEstimationControllerViewController.m; sourceTree = "<group>"; };
+		FCFE6EF2245A768C00D287FE /* HandTrackingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTrackingController.h; sourceTree = "<group>"; };
+		FCFE6EF4245A768C00D287FE /* BlazeFaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeFaceController.h; sourceTree = "<group>"; };
+		FCFE6EF5245A768C00D287FE /* PoseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseController.h; sourceTree = "<group>"; };
+		FCFE6EF6245A768C00D287FE /* PoseEstimationControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseEstimationControllerViewController.h; sourceTree = "<group>"; };
+		FCFE6EF7245A768C00D287FE /* PoseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseController.m; sourceTree = "<group>"; };
+		FCFE6EF8245A768C00D287FE /* BlazeFaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeFaceController.m; sourceTree = "<group>"; };
+		FCFE6EFA245A768C00D287FE /* HandTrackingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandTrackingController.m; sourceTree = "<group>"; };
+		FCFE6EFC245A768C00D287FE /* PoseNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseNet.m; sourceTree = "<group>"; };
+		FCFE6EFD245A768C00D287FE /* PoseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseNetManager.h; sourceTree = "<group>"; };
+		FCFE6EFE245A768C00D287FE /* PoseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseNetManager.m; sourceTree = "<group>"; };
+		FCFE6EFF245A768C00D287FE /* PoseNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoseNet.h; sourceTree = "<group>"; };
+		FCFE6F01245A768C00D287FE /* BlazeFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeFace.h; sourceTree = "<group>"; };
+		FCFE6F02245A768C00D287FE /* BlazeFaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeFaceManager.h; sourceTree = "<group>"; };
+		FCFE6F03245A768C00D287FE /* BlazeFaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlazeFaceUtil.h; sourceTree = "<group>"; };
+		FCFE6F04245A768C00D287FE /* Face.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Face.m; sourceTree = "<group>"; };
+		FCFE6F05245A768C00D287FE /* BlazeFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeFace.m; sourceTree = "<group>"; };
+		FCFE6F06245A768C00D287FE /* BlazeFaceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeFaceUtil.m; sourceTree = "<group>"; };
+		FCFE6F07245A768C00D287FE /* BlazeFaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlazeFaceManager.m; sourceTree = "<group>"; };
+		FCFE6F08245A768C00D287FE /* Face.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
+		FCFE6F0A245A768C00D287FE /* HandTrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTrackingManager.h; sourceTree = "<group>"; };
+		FCFE6F0B245A768C00D287FE /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		FCFE6F0C245A768C00D287FE /* HandTrakcing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandTrakcing.m; sourceTree = "<group>"; };
+		FCFE6F0D245A768C00D287FE /* HandTrackingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandTrackingManager.m; sourceTree = "<group>"; };
+		FCFE6F0E245A768C00D287FE /* HandTrakcing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandTrakcing.h; sourceTree = "<group>"; };
+		FCFE6F0F245A768C00D287FE /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		FCFE6F11245A768C00D287FE /* hand_landmark_3d.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hand_landmark_3d.tflite; sourceTree = "<group>"; };
+		FCFE6F12245A768C00D287FE /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		FCFE6F13245A768C00D287FE /* hand_landmark.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hand_landmark.tflite; sourceTree = "<group>"; };
+		FCFE6F14245A768C00D287FE /* skeleton.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = skeleton.tflite; sourceTree = "<group>"; };
+		FCFE6F15245A768C00D287FE /* face_detection_front.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_detection_front.tflite; sourceTree = "<group>"; };
+		FCFE6F16245A768C00D287FE /* posenet_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = posenet_model.tflite; sourceTree = "<group>"; };
+		FCFE6F17245A768C00D287FE /* AILib.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AILib.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC45F4BC242DA994000A051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC58CA84242DDB8600740ACA /* Accelerate.framework in Frameworks */,
+				3980B76048807F69DA387461 /* Pods_AIDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00125D01DB12BCE7A99EF3FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC58CA83242DDB8600740ACA /* Accelerate.framework */,
+				80E09C1009CCA456AC1E2264 /* Pods_AIDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52CA84172E5FA1AD7CA68045 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04E06178A941268418194A70 /* Pods-AIDemo.debug.xcconfig */,
+				2C551809DE3DDEA2D637008B /* Pods-AIDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC45F4B6242DA994000A051B = {
+			isa = PBXGroup;
+			children = (
+				FC45F4C1242DA994000A051B /* AIDemo */,
+				FC45F4C0242DA994000A051B /* Products */,
+				52CA84172E5FA1AD7CA68045 /* Pods */,
+				00125D01DB12BCE7A99EF3FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC45F4C0242DA994000A051B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC45F4BF242DA994000A051B /* AIDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC45F4C1242DA994000A051B /* AIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EDC245A768C00D287FE /* AILib */,
+				FC45F4C2242DA994000A051B /* AppDelegate.h */,
+				FC45F4C3242DA994000A051B /* AppDelegate.m */,
+				FC45F4CE242DA995000A051B /* Assets.xcassets */,
+				FC45F4D3242DA995000A051B /* Info.plist */,
+				FC45F4D4242DA995000A051B /* main.m */,
+				FC58CA4B242DD18700740ACA /* MainViewController.h */,
+				FC58CA4C242DD18700740ACA /* MainViewController.m */,
+			);
+			path = AIDemo;
+			sourceTree = "<group>";
+		};
+		FCFE6EDC245A768C00D287FE /* AILib */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EDD245A768C00D287FE /* Classes */,
+				FCFE6F10245A768C00D287FE /* Model */,
+				FCFE6F17245A768C00D287FE /* AILib.podspec */,
+			);
+			path = AILib;
+			sourceTree = SOURCE_ROOT;
+		};
+		FCFE6EDD245A768C00D287FE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EDE245A768C00D287FE /* Skeleton */,
+				FCFE6EE3245A768C00D287FE /* Utils */,
+				FCFE6EE9245A768C00D287FE /* View */,
+				FCFE6EF0245A768C00D287FE /* ViewController */,
+				FCFE6EFB245A768C00D287FE /* PoseNet */,
+				FCFE6F00245A768C00D287FE /* BlazeFace */,
+				FCFE6F09245A768C00D287FE /* HandTracking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FCFE6EDE245A768C00D287FE /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EDF245A768C00D287FE /* Skeleton.m */,
+				FCFE6EE0245A768C00D287FE /* SkeletonManager.m */,
+				FCFE6EE1245A768C00D287FE /* SkeletonManager.h */,
+				FCFE6EE2245A768C00D287FE /* Skeleton.h */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		FCFE6EE3245A768C00D287FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EE4245A768C00D287FE /* CameraUtils.m */,
+				FCFE6EE5245A768C00D287FE /* VImageUtils.h */,
+				FCFE6EE6245A768C00D287FE /* AIConstants.h */,
+				FCFE6EE7245A768C00D287FE /* CameraUtils.h */,
+				FCFE6EE8245A768C00D287FE /* VImageUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FCFE6EE9245A768C00D287FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EEA245A768C00D287FE /* PoseLayer.m */,
+				FCFE6EEB245A768C00D287FE /* HandTrackingLayer.h */,
+				FCFE6EEC245A768C00D287FE /* BlazeFaceLayer.m */,
+				FCFE6EED245A768C00D287FE /* PoseLayer.h */,
+				FCFE6EEE245A768C00D287FE /* BlazeFaceLayer.h */,
+				FCFE6EEF245A768C00D287FE /* HandTrackingLayer.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCFE6EF0245A768C00D287FE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EF1245A768C00D287FE /* PoseEstimationControllerViewController.m */,
+				FCFE6EF2245A768C00D287FE /* HandTrackingController.h */,
+				FCFE6EF4245A768C00D287FE /* BlazeFaceController.h */,
+				FCFE6EF5245A768C00D287FE /* PoseController.h */,
+				FCFE6EF6245A768C00D287FE /* PoseEstimationControllerViewController.h */,
+				FCFE6EF7245A768C00D287FE /* PoseController.m */,
+				FCFE6EF8245A768C00D287FE /* BlazeFaceController.m */,
+				FCFE6EFA245A768C00D287FE /* HandTrackingController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FCFE6EFB245A768C00D287FE /* PoseNet */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6EFC245A768C00D287FE /* PoseNet.m */,
+				FCFE6EFD245A768C00D287FE /* PoseNetManager.h */,
+				FCFE6EFE245A768C00D287FE /* PoseNetManager.m */,
+				FCFE6EFF245A768C00D287FE /* PoseNet.h */,
+			);
+			path = PoseNet;
+			sourceTree = "<group>";
+		};
+		FCFE6F00245A768C00D287FE /* BlazeFace */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6F01245A768C00D287FE /* BlazeFace.h */,
+				FCFE6F02245A768C00D287FE /* BlazeFaceManager.h */,
+				FCFE6F03245A768C00D287FE /* BlazeFaceUtil.h */,
+				FCFE6F04245A768C00D287FE /* Face.m */,
+				FCFE6F05245A768C00D287FE /* BlazeFace.m */,
+				FCFE6F06245A768C00D287FE /* BlazeFaceUtil.m */,
+				FCFE6F07245A768C00D287FE /* BlazeFaceManager.m */,
+				FCFE6F08245A768C00D287FE /* Face.h */,
+			);
+			path = BlazeFace;
+			sourceTree = "<group>";
+		};
+		FCFE6F09245A768C00D287FE /* HandTracking */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6F0A245A768C00D287FE /* HandTrackingManager.h */,
+				FCFE6F0B245A768C00D287FE /* Hand.h */,
+				FCFE6F0C245A768C00D287FE /* HandTrakcing.m */,
+				FCFE6F0D245A768C00D287FE /* HandTrackingManager.m */,
+				FCFE6F0E245A768C00D287FE /* HandTrakcing.h */,
+				FCFE6F0F245A768C00D287FE /* Hand.m */,
+			);
+			path = HandTracking;
+			sourceTree = "<group>";
+		};
+		FCFE6F10245A768C00D287FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCFE6F11245A768C00D287FE /* hand_landmark_3d.tflite */,
+				FCFE6F12245A768C00D287FE /* labels.txt */,
+				FCFE6F13245A768C00D287FE /* hand_landmark.tflite */,
+				FCFE6F14245A768C00D287FE /* skeleton.tflite */,
+				FCFE6F15245A768C00D287FE /* face_detection_front.tflite */,
+				FCFE6F16245A768C00D287FE /* posenet_model.tflite */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC45F4BE242DA994000A051B /* AIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC45F4D8242DA995000A051B /* Build configuration list for PBXNativeTarget "AIDemo" */;
+			buildPhases = (
+				EE392BBE1666648127C6FE94 /* [CP] Check Pods Manifest.lock */,
+				FC45F4BB242DA994000A051B /* Sources */,
+				FC45F4BC242DA994000A051B /* Frameworks */,
+				FC45F4BD242DA994000A051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIDemo;
+			productName = AIDemo;
+			productReference = FC45F4BF242DA994000A051B /* AIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC45F4B7242DA994000A051B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = com.sina;
+				TargetAttributes = {
+					FC45F4BE242DA994000A051B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FC45F4BA242DA994000A051B /* Build configuration list for PBXProject "AIDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC45F4B6242DA994000A051B;
+			productRefGroup = FC45F4C0242DA994000A051B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC45F4BE242DA994000A051B /* AIDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC45F4BD242DA994000A051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC45F4CF242DA995000A051B /* Assets.xcassets in Resources */,
+				FCFE6F2E245A768C00D287FE /* labels.txt in Resources */,
+				FCFE6F33245A768C00D287FE /* AILib.podspec in Resources */,
+				FCFE6F30245A768C00D287FE /* skeleton.tflite in Resources */,
+				FCFE6F32245A768C00D287FE /* posenet_model.tflite in Resources */,
+				FCFE6F2F245A768C00D287FE /* hand_landmark.tflite in Resources */,
+				FCFE6F31245A768C00D287FE /* face_detection_front.tflite in Resources */,
+				FCFE6F2D245A768C00D287FE /* hand_landmark_3d.tflite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE392BBE1666648127C6FE94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AIDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC45F4BB242DA994000A051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFE6F1A245A768C00D287FE /* CameraUtils.m in Sources */,
+				FCFE6F24245A768C00D287FE /* PoseNet.m in Sources */,
+				FCFE6F29245A768C00D287FE /* BlazeFaceManager.m in Sources */,
+				FCFE6F1F245A768C00D287FE /* PoseEstimationControllerViewController.m in Sources */,
+				FCFE6F19245A768C00D287FE /* SkeletonManager.m in Sources */,
+				FCFE6F28245A768C00D287FE /* BlazeFaceUtil.m in Sources */,
+				FCFE6F21245A768C00D287FE /* BlazeFaceController.m in Sources */,
+				FCFE6F1C245A768C00D287FE /* PoseLayer.m in Sources */,
+				FCFE6F1B245A768C00D287FE /* VImageUtils.m in Sources */,
+				FCFE6F23245A768C00D287FE /* HandTrackingController.m in Sources */,
+				FCFE6F25245A768C00D287FE /* PoseNetManager.m in Sources */,
+				FCFE6F2C245A768C00D287FE /* Hand.m in Sources */,
+				FCFE6F2B245A768C00D287FE /* HandTrackingManager.m in Sources */,
+				FC45F4C4242DA994000A051B /* AppDelegate.m in Sources */,
+				FCFE6F1D245A768C00D287FE /* BlazeFaceLayer.m in Sources */,
+				FC58CA4D242DD18700740ACA /* MainViewController.m in Sources */,
+				FCFE6F1E245A768C00D287FE /* HandTrackingLayer.m in Sources */,
+				FCFE6F18245A768C00D287FE /* Skeleton.m in Sources */,
+				FCFE6F2A245A768C00D287FE /* HandTrakcing.m in Sources */,
+				FCFE6F20245A768C00D287FE /* PoseController.m in Sources */,
+				FCFE6F26245A768C00D287FE /* Face.m in Sources */,
+				FCFE6F27245A768C00D287FE /* BlazeFace.m in Sources */,
+				FC45F4D5242DA995000A051B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC45F4D6242DA995000A051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC45F4D7242DA995000A051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC45F4D9242DA995000A051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E06178A941268418194A70 /* Pods-AIDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JG43D9FHBA;
+				INFOPLIST_FILE = AIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sina.AIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FC45F4DA242DA995000A051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C551809DE3DDEA2D637008B /* Pods-AIDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JG43D9FHBA;
+				INFOPLIST_FILE = AIDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sina.AIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC45F4BA242DA994000A051B /* Build configuration list for PBXProject "AIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC45F4D6242DA995000A051B /* Debug */,
+				FC45F4D7242DA995000A051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC45F4D8242DA995000A051B /* Build configuration list for PBXNativeTarget "AIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC45F4D9242DA995000A051B /* Debug */,
+				FC45F4DA242DA995000A051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC45F4B7242DA994000A051B /* Project object */;
+}
